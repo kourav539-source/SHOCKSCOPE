@@ -1,0 +1,37 @@
+country,industry,local_lens
+India,Energy,For an Indian refiner examine imported crude sourcing and the gap between product and crude prices.
+India,Aviation,For an Indian airline examine fuel purchased locally versus foreign-currency lease and fuel obligations.
+India,Manufacturing,For an Indian manufacturer examine imported components and delivery commitments to European customers.
+India,Agriculture,For an Indian farm business examine fertilizer and diesel procurement as well as domestic price policy.
+India,Logistics,For an Indian logistics operator examine Asia-Europe shipping contracts and domestic fuel pass-through.
+India,Chemicals,For an Indian chemical producer examine imported feedstock and the ability to adjust selling prices.
+China,Energy,For a Chinese refiner examine Gulf-linked supply contracts and alternative crude sourcing.
+China,Aviation,For a Chinese airline examine international route economics and jet fuel procurement.
+China,Manufacturing,For a Chinese exporter examine Europe-bound container shipments and component inventory.
+China,Agriculture,For a Chinese agricultural processor examine imported feed and fertilizer input contracts.
+China,Logistics,For a Chinese logistics operator examine export booking volumes and vessel turnaround times.
+China,Chemicals,For a Chinese petrochemical producer examine crude-linked feedstock costs and export freight.
+USA,Energy,For a US producer or refiner distinguish domestic production revenues from globally priced inputs.
+USA,Aviation,For a US airline examine domestic and international fuel expenditure and hedging policy.
+USA,Manufacturing,For a US manufacturer examine globally sourced components and domestic supplier alternatives.
+USA,Agriculture,For a US grain producer examine export prices against fuel and fertilizer costs.
+USA,Logistics,For a US importer or carrier examine affected trade lanes and inland fuel surcharges.
+USA,Chemicals,For a US chemical producer examine domestic gas sourcing and global product prices.
+Japan,Energy,For a Japanese energy buyer examine imported oil and LNG contracts and storage buffers.
+Japan,Aviation,For a Japanese airline examine imported fuel and foreign-currency payments.
+Japan,Manufacturing,For a Japanese manufacturer examine parts supply and energy cost per unit.
+Japan,Agriculture,For a Japanese food processor examine imported grain and feed costs and currency exposure.
+Japan,Logistics,For a Japanese carrier examine maritime route dependencies and bunker fuel costs.
+Japan,Chemicals,For a Japanese chemical producer examine imported hydrocarbon feedstock and electricity cost.
+Germany,Energy,For a German energy buyer examine gas and power procurement and alternative supply contracts.
+Germany,Aviation,For a German airline examine Europe-Asia routes and fuel expenses.
+Germany,Manufacturing,For a German manufacturer examine energy-intensive operations and Asian component deliveries.
+Germany,Agriculture,For a German farm business examine energy and fertilizer bills relative to crop revenues.
+Germany,Logistics,For a German importer or carrier examine Asia-Europe routes and inventory funding needs.
+Germany,Chemicals,For a German chemical producer examine gas-intensive plants and feedstock substitution.
+Australia,Energy,For an Australian LNG exporter or fuel buyer separate export revenue opportunities from domestic fuel costs.
+Australia,Aviation,For an Australian airline examine long-haul fuel use and imported jet fuel prices.
+Australia,Manufacturing,For an Australian manufacturer examine imported equipment and transport-related costs.
+Australia,Agriculture,For an Australian grain exporter examine global selling prices against fertilizer and freight expense.
+Australia,Logistics,For an Australian logistics operator examine Europe-bound freight and domestic diesel exposure.
+Australia,Chemicals,For an Australian chemical producer examine domestic gas contracts and imported specialty inputs.

@@ -1,0 +1,19 @@
+country,event,level,score,rationale,classification
+India,Strait of Hormuz disruption,Higher,3,"EIA identifies India among the leading Asian destinations for crude oil moving through Hormuz; disruption can transmit through imported energy prices.",Analyst qualitative assessment
+India,Red Sea shipping crisis,Higher,3,"As a major Asian trading economy, India may be affected by longer Asia-Europe routes, freight costs, insurance and delivery delays.",Analyst qualitative assessment
+India,Russia–Ukraine war,Moderate,2,"Global energy, fertilizer and food prices can affect import costs and domestic inflation; the net effect depends on commodity and policy conditions.",Analyst qualitative assessment
+China,Strait of Hormuz disruption,Higher,3,"EIA identifies China as a leading destination for Hormuz crude and LNG flows, making the energy supply channel important to monitor.",Analyst qualitative assessment
+China,Red Sea shipping crisis,Higher,3,"Manufacturing and exports linked to Asia-Europe trade may face longer transit times, freight premiums and schedule disruption.",Analyst qualitative assessment
+China,Russia–Ukraine war,Higher,3,"Energy, metals, fertilizer and agricultural commodity price changes can affect a large industrial and consumer economy.",Analyst qualitative assessment
+USA,Strait of Hormuz disruption,Lower,1,"Direct route exposure is lower than for major Asian destinations; EIA estimated Hormuz crude flows at about 2% of US petroleum liquids consumption in 1H25, although global oil prices can still affect US users.",Analyst qualitative assessment
+USA,Red Sea shipping crisis,Moderate,2,"Global freight, inventory timing and shipping-market changes can pass through to US importers and internationally connected firms.",Analyst qualitative assessment
+USA,Russia–Ukraine war,Moderate,2,"Global commodity prices and supply-chain costs can affect US consumers and businesses, while domestic production changes the exposure profile.",Analyst qualitative assessment
+Japan,Strait of Hormuz disruption,Higher,3,"Japan is among the major Asian destinations for crude oil moving through Hormuz, making the energy-import channel important to monitor.",Analyst qualitative assessment
+Japan,Red Sea shipping crisis,Higher,3,"Trade links with Europe and dependence on maritime transport expose firms to route diversions, freight rates and longer delivery times.",Analyst qualitative assessment
+Japan,Russia–Ukraine war,Higher,3,"Energy and food commodity price shocks can pass through to an import-dependent economy and energy-intensive industries.",Analyst qualitative assessment
+Germany,Strait of Hormuz disruption,Moderate,2,"The main channel is indirect global energy-price transmission rather than the same direct destination exposure as key Asian buyers.",Analyst qualitative assessment
+Germany,Red Sea shipping crisis,Higher,3,"The Suez route is an important Europe-Asia corridor; rerouting can raise freight, insurance, fuel and inventory costs for European firms.",Analyst qualitative assessment
+Germany,Russia–Ukraine war,Higher,3,"The war disrupted energy and commodity markets; higher energy and input prices can affect German manufacturing and households.",Analyst qualitative assessment
+Australia,Strait of Hormuz disruption,Moderate,2,"Global oil and freight prices can affect transport and business costs; effects may differ between commodity exporters and domestic users.",Analyst qualitative assessment
+Australia,Red Sea shipping crisis,Moderate,2,"Longer shipping routes and higher freight costs can affect trade with Europe and the timing of imported inputs.",Analyst qualitative assessment
+Australia,Russia–Ukraine war,Moderate,2,"Energy, fertilizer and grain-market changes can affect agricultural and industrial input costs, while some commodity exporters may benefit.",Analyst qualitative assessment

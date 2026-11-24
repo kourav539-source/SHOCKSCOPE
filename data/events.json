@@ -1,0 +1,162 @@
+{
+  "Strait of Hormuz disruption": {
+    "background": "The Strait connects the Persian Gulf with the Gulf of Oman. Its importance to oil and LNG trade makes potential restrictions a global energy supply risk. The historical throughput figure measures exposure, not a closure.",
+    "timeline": [
+      [
+        "2020–2024",
+        "EIA records annual oil flows through the route."
+      ],
+      [
+        "First half of 2025",
+        "EIA estimates average oil throughput of 20.9 million barrels per day."
+      ]
+    ],
+    "chain": [
+      "Potential restriction of tanker traffic",
+      "Reduced accessible energy supply or higher transport risk",
+      "Higher crude oil and fuel costs",
+      "Higher import bills and business input costs",
+      "Possible inflation and pressure on margins"
+    ],
+    "macro": [
+      "Energy importers may face weaker trade balances.",
+      "Commodity exporters may benefit from higher prices if their own shipments remain accessible.",
+      "Monetary policy responses depend on inflation persistence and domestic demand."
+    ],
+    "industries": [
+      [
+        "Energy",
+        "Higher prices; supply and refining risks"
+      ],
+      [
+        "Aviation",
+        "Higher jet fuel costs"
+      ],
+      [
+        "Manufacturing",
+        "Higher energy and transport costs"
+      ],
+      [
+        "Agriculture",
+        "Higher diesel and fertilizer costs"
+      ],
+      [
+        "Logistics",
+        "Higher fuel and insurance costs"
+      ],
+      [
+        "Chemicals",
+        "Higher hydrocarbon feedstock costs"
+      ]
+    ],
+    "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  "Red Sea shipping crisis": {
+    "background": "Security threats to commercial shipping in the Red Sea from late 2023 prompted carriers to divert vessels around southern Africa, lengthening voyages between Asia and Europe.",
+    "timeline": [
+      [
+        "Late 2023",
+        "Security risks prompt shipping diversions."
+      ],
+      [
+        "June 2024",
+        "UNCTAD reports Suez transits down 70% against its mid-December 2023 comparison."
+      ],
+      [
+        "2024",
+        "UNCTAD publishes Review of Maritime Transport 2024."
+      ]
+    ],
+    "chain": [
+      "Shipping security risk",
+      "Diversions around the Cape of Good Hope",
+      "Longer voyages and reduced effective shipping capacity",
+      "Higher freight, insurance and inventory costs",
+      "Potential consumer price and margin pressure"
+    ],
+    "macro": [
+      "Trade delivery delays can interrupt production.",
+      "Import price pass-through depends on contracts and competition.",
+      "Working capital requirements may rise."
+    ],
+    "industries": [
+      [
+        "Energy",
+        "Longer tanker voyages"
+      ],
+      [
+        "Aviation",
+        "Possible demand for air freight"
+      ],
+      [
+        "Manufacturing",
+        "Delayed components"
+      ],
+      [
+        "Agriculture",
+        "Higher freight and spoilage risks"
+      ],
+      [
+        "Logistics",
+        "Higher voyage costs; possible freight revenue gains"
+      ],
+      [
+        "Chemicals",
+        "Delayed bulk inputs"
+      ]
+    ],
+    "url": "https://unctad.org/publication/review-maritime-transport-2024"
+  },
+  "Russia–Ukraine war": {
+    "background": "Russia’s full-scale invasion of Ukraine in February 2022 disrupted trade and production in important energy, grain and fertilizer markets. Sanctions and uncertainty also altered trade patterns.",
+    "timeline": [
+      [
+        "February 2022",
+        "Russia launches its full-scale invasion of Ukraine."
+      ],
+      [
+        "April 2022",
+        "World Bank publishes commodity outlook forecasting wheat price growth above 40% for 2022."
+      ]
+    ],
+    "chain": [
+      "War, trade disruption and sanctions",
+      "Reduced or redirected commodity supplies",
+      "Energy, grain and fertilizer price pressure",
+      "Higher food and industrial input costs",
+      "Potential inflation and changes in trade balances"
+    ],
+    "macro": [
+      "Food and energy importers may face higher import bills.",
+      "Commodity exporters may gain from higher prices.",
+      "Household purchasing power may decline when wages lag inflation."
+    ],
+    "industries": [
+      [
+        "Energy",
+        "Price volatility and sourcing changes"
+      ],
+      [
+        "Aviation",
+        "Fuel cost pressure"
+      ],
+      [
+        "Manufacturing",
+        "Energy and metal input costs"
+      ],
+      [
+        "Agriculture",
+        "Grain and fertilizer price volatility"
+      ],
+      [
+        "Logistics",
+        "Trade rerouting and higher costs"
+      ],
+      [
+        "Chemicals",
+        "Natural gas and fertilizer feedstock exposure"
+      ]
+    ],
+    "url": "https://www.worldbank.org/en/news/press-release/2022/04/26/food-and-energy-price-shocks-from-ukraine-war"
+  }
+}

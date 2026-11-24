@@ -1,0 +1,25 @@
+country,year,real_gdp_growth_pct,consumer_price_inflation_pct,gdp_table,cpi_table,period_basis,vintage,source_url
+India,2021,9.7,5.5,A4,A7,Fiscal-year basis (April–March; label is starting year),IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+India,2022,7.6,6.7,A4,A7,Fiscal-year basis (April–March; label is starting year),IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+India,2023,9.2,5.4,A4,A7,Fiscal-year basis (April–March; label is starting year),IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+India,2024,6.5,4.7,A4,A7,Fiscal-year basis (April–March; label is starting year),IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+China,2021,8.6,0.9,A4,A7,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+China,2022,3.1,2,A4,A7,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+China,2023,5.4,0.2,A4,A7,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+China,2024,5.0,0.2,A4,A7,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+USA,2021,6.1,4.7,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+USA,2022,2.5,8,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+USA,2023,2.9,4.1,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+USA,2024,2.8,3,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Japan,2021,2.7,-0.2,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Japan,2022,0.9,2.5,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Japan,2023,1.5,3.3,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Japan,2024,0.1,2.7,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Germany,2021,3.7,3.2,A2,A6,Calendar year; CPI is WEO harmonized measure,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Germany,2022,1.4,8.7,A2,A6,Calendar year; CPI is WEO harmonized measure,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Germany,2023,-0.3,6,A2,A6,Calendar year; CPI is WEO harmonized measure,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Germany,2024,-0.2,2.5,A2,A6,Calendar year; CPI is WEO harmonized measure,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Australia,2021,5.4,2.8,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Australia,2022,4.1,6.6,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Australia,2023,2.1,5.6,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
+Australia,2024,1,3.2,A2,A6,Calendar year,IMF WEO April 2025,https://www.imf.org/-/media/files/publications/weo/2025/april/english/tablea.pdf
