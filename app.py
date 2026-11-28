@@ -1,5 +1,6 @@
 import streamlit as st
 
+from modules.evidence_desk import render_evidence_desk
 from modules.dashboard import render_dashboard
 from modules.event_explorer import render_event_explorer
 from modules.impact_analyzer import render_impact_analyzer
@@ -133,7 +134,7 @@ with st.sidebar:
     )
     st.markdown("---")
     st.markdown("**WORKSPACE**")
-    page = st.radio("Navigate", ["00 · Product Overview", "01 · Global Dashboard", "02 · Event Explorer", "03 · Country & Industry Impact", "04 · Shock Simulator", "05 · Company Calculator & Reports"], label_visibility="collapsed", key="scope_page")
+    page = st.radio("Navigate", ["00 · Product Overview", "01 · Global Dashboard", "02 · Event Explorer", "03 · Country & Industry Impact", "04 · Shock Simulator", "05 · Company Calculator & Reports", "06 · Evidence & Market Reaction"], label_visibility="collapsed", key="scope_page")
     st.markdown("---")
     st.markdown("**ACTIVE ANALYSIS CASE**")
     shared_select("International event", "event", "scope_sidebar_event")
@@ -142,7 +143,7 @@ with st.sidebar:
     st.button("Reset case", on_click=reset_case, key="scope_reset_case")
     st.caption("Selections follow you between modules. Financial inputs are separate and may reset when navigating; export results before leaving a calculator.")
     st.markdown("---")
-    st.caption("BUILD 0.7 · LOCAL DATA MODE")
+    st.caption("BUILD 0.8 · LOCAL DATA MODE")
     st.caption("Historical reference data only. No live market feed is connected.")
 
 if page.startswith("00"):
@@ -155,5 +156,7 @@ elif page.startswith("03"):
     render_impact_analyzer()
 elif page.startswith("04"):
     render_shock_simulator()
-else:
+elif page.startswith("05"):
     render_company_calculator()
+else:
+    render_evidence_desk()
