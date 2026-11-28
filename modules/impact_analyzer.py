@@ -11,7 +11,7 @@ DATA = Path(__file__).resolve().parents[1] / 'data'
 COUNTRIES = ['India', 'China', 'USA', 'Japan', 'Germany', 'Australia']
 INDUSTRIES = ['Energy', 'Aviation', 'Manufacturing', 'Agriculture', 'Logistics', 'Chemicals']
 COLORS = {'Lower': '#82c8b6', 'Moderate': '#edc16b', 'Higher': '#e58e88'}
-PALETTE = ['#79d6ca', '#f2b65f', '#92b6f5', '#b29ae8', '#f0908c', '#b6d68b']
+PALETTE = ['#087668', '#b96517', '#4275a8', '#8058a5', '#bc5250', '#63832f']
 
 
 def load_data():
@@ -24,13 +24,13 @@ def load_data():
 
 
 def theme(fig, height=390):
-    fig.update_layout(template='plotly_dark', paper_bgcolor='rgba(0,0,0,0)',
-                      plot_bgcolor='#111f30', font=dict(color='#e5eefb'), height=height,
+    fig.update_layout(template='plotly_white', paper_bgcolor='rgba(0,0,0,0)',
+                      plot_bgcolor='#ffffff', font=dict(color='#203a40'), height=height,
                       margin=dict(l=25, r=25, t=30, b=45),
                       legend=dict(orientation='h', yanchor='top', y=-0.18, x=0),
                       hoverlabel=dict(bgcolor='#172b42', font_color='#ffffff'))
-    fig.update_xaxes(gridcolor='#293a4c', automargin=True)
-    fig.update_yaxes(gridcolor='#293a4c', automargin=True)
+    fig.update_xaxes(gridcolor='#dce6e3', automargin=True)
+    fig.update_yaxes(gridcolor='#dce6e3', automargin=True)
     return fig
 
 

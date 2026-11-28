@@ -57,18 +57,18 @@ def build_report(name, country, industry, event, period, currency, result, fx, r
 
 
 def style(fig, currency):
-    fig.update_layout(template='plotly_dark',paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='#111f30',font=dict(color='#e5eefb'),height=380,margin=dict(l=20,r=20,t=35,b=60),yaxis_title=f'Million {currency}',legend=dict(orientation='h',y=1.13))
-    fig.update_yaxes(gridcolor='#293a4c',zerolinecolor='#90a3ba',automargin=True)
+    fig.update_layout(template='plotly_white',paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='#ffffff',font=dict(color='#203a40'),height=380,margin=dict(l=20,r=20,t=35,b=60),yaxis_title=f'Million {currency}',legend=dict(orientation='h',y=1.13))
+    fig.update_yaxes(gridcolor='#dce6e3',zerolinecolor='#748f89',automargin=True)
     fig.update_xaxes(automargin=True)
     return fig
 
 
 def make_charts(r,currency):
     fig=go.Figure()
-    for label, vals, color in [('Baseline',[r['revenue'],r['base_cost'],r['ebitda0']],'#79d6ca'),('Scenario',[r['scenario_revenue'],r['scenario_cost'],r['ebitda1']],'#f2b65f')]:
+    for label, vals, color in [('Baseline',[r['revenue'],r['base_cost'],r['ebitda0']],'#087668'),('Scenario',[r['scenario_revenue'],r['scenario_cost'],r['ebitda1']],'#b96517')]:
         fig.add_bar(name=label,x=['Revenue','Cash operating costs','EBITDA'],y=vals,marker_color=color)
     fig.update_layout(barmode='group')
-    bridge=go.Figure(go.Waterfall(x=['Baseline EBITDA','Price effect','FX effect','Cost recovery','Scenario EBITDA'],measure=['absolute','relative','relative','relative','total'],y=[r['ebitda0'],-r['price_effect'],-r['fx_effect'],r['recovered'],0],increasing=dict(marker=dict(color='#82c8b6')),decreasing=dict(marker=dict(color='#e58e88')),totals=dict(marker=dict(color='#92b6f5')),connector=dict(line=dict(color='#71849c'))))
+    bridge=go.Figure(go.Waterfall(x=['Baseline EBITDA','Price effect','FX effect','Cost recovery','Scenario EBITDA'],measure=['absolute','relative','relative','relative','total'],y=[r['ebitda0'],-r['price_effect'],-r['fx_effect'],r['recovered'],0],increasing=dict(marker=dict(color='#82c8b6')),decreasing=dict(marker=dict(color='#e58e88')),totals=dict(marker=dict(color='#4275a8')),connector=dict(line=dict(color='#71849c'))))
     return style(fig,currency),style(bridge,currency)
 
 

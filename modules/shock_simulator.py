@@ -32,10 +32,10 @@ def compact_money(value, currency):
 
 
 def chart_style(fig):
-    fig.update_layout(template='plotly_dark',paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='#111f30',
-                      font=dict(color='#e5eefb'),height=370,margin=dict(l=15,r=15,t=25,b=50),
+    fig.update_layout(template='plotly_white',paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='#ffffff',
+                      font=dict(color='#203a40'),height=370,margin=dict(l=15,r=15,t=25,b=50),
                       legend=dict(orientation='h',y=1.12),bargap=.27)
-    fig.update_yaxes(gridcolor='#293a4c',zerolinecolor='#90a3ba',automargin=True)
+    fig.update_yaxes(gridcolor='#dce6e3',zerolinecolor='#748f89',automargin=True)
     fig.update_xaxes(automargin=True)
     return fig
 
@@ -43,14 +43,14 @@ def chart_style(fig):
 def make_charts(rows, currency):
     names=rows['channel'].tolist()
     fig=go.Figure()
-    for col,label,color in [('baseline_local','Baseline','#79d6ca'),('scenario_local','Scenario','#f2b65f')]:
+    for col,label,color in [('baseline_local','Baseline','#087668'),('scenario_local','Scenario','#b96517')]:
         fig.add_bar(x=names,y=rows[col],name=label,marker_color=color,hovertemplate='%{x}<br>'+currency+' %{y:,.2f}<extra>%{fullData.name}</extra>')
     fig.update_layout(barmode='group',yaxis_title=f'Cost ({currency})')
     waterfall=go.Figure(go.Waterfall(x=['Baseline','Price / freight change','FX change','Scenario'],
         measure=['absolute','relative','relative','total'],
         y=[rows.baseline_local.sum(),rows.price_effect_local.sum(),rows.fx_effect_local.sum(),0],
         increasing=dict(marker=dict(color='#e58e88')),decreasing=dict(marker=dict(color='#82c8b6')),
-        totals=dict(marker=dict(color='#92b6f5')),connector=dict(line=dict(color='#71849c')),
+        totals=dict(marker=dict(color='#4275a8')),connector=dict(line=dict(color='#71849c')),
         hovertemplate=currency+' %{y:,.2f}<extra></extra>'))
     waterfall.update_layout(yaxis_title=f'Cost ({currency})',showlegend=False)
     return chart_style(fig),chart_style(waterfall)

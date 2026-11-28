@@ -30,14 +30,14 @@ def load_csv(filename: str) -> pd.DataFrame:
 
 
 def style_plotly_figure(fig: go.Figure, height: int = 340) -> go.Figure:
-    """Apply the same dark visual style to dashboard charts."""
+    """Apply the same light visual style to dashboard charts."""
     fig.update_layout(
-        template="plotly_dark",
-        title_font=dict(color="#e9f1fb", size=16),
+        template="plotly_white",
+        title_font=dict(color="#17323a", size=16),
         height=height,
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#dce8f5", size=12),
+        font=dict(color="#203a40", size=12),
         margin=dict(l=40, r=25, t=60, b=75),
         legend=dict(
             orientation="h",
@@ -54,15 +54,15 @@ def style_plotly_figure(fig: go.Figure, height: int = 340) -> go.Figure:
             automargin=True,
             showgrid=False,
             zeroline=False,
-            linecolor="#35506c",
-            tickfont=dict(color="#aebfd2"),
+            linecolor="#afc5c0",
+            tickfont=dict(color="#445e63"),
         ),
         yaxis=dict(
             showgrid=True,
-            gridcolor="rgba(142, 165, 190, 0.16)",
+            gridcolor="#dce6e3",
             zeroline=False,
-            linecolor="#35506c",
-            tickfont=dict(color="#aebfd2"),
+            linecolor="#afc5c0",
+            tickfont=dict(color="#445e63"),
         ),
     )
     return fig
@@ -106,8 +106,8 @@ def render_flow_charts(indicators: pd.DataFrame) -> None:
         title="Strait of Hormuz · oil flows",
     )
     hormuz_fig.update_traces(
-        line=dict(color="#f1ad58", width=3),
-        marker=dict(size=8, color="#f1ad58"),
+        line=dict(color="#a55312", width=3),
+        marker=dict(size=8, color="#a55312"),
         hovertemplate="%{x}<br>%{y:.1f} million barrels/day<extra></extra>",
     )
     hormuz_fig = style_plotly_figure(hormuz_fig, height=430)
@@ -131,8 +131,8 @@ def render_flow_charts(indicators: pd.DataFrame) -> None:
         },
         title="Red Sea approaches · oil flows",
         color_discrete_map={
-            "Suez Canal + SUMED oil flows": "#65c5bb",
-            "Bab el-Mandeb oil flows": "#a88ce0",
+            "Suez Canal + SUMED oil flows": "#087668",
+            "Bab el-Mandeb oil flows": "#7756aa",
         },
     )
     shipping_fig.update_traces(
@@ -200,11 +200,11 @@ def render_exposure_matrix(exposure: pd.DataFrame) -> None:
                 [1.00, "#e58c83"],
             ],
             colorbar=dict(
-                title={"text": "Sensitivity", "font": {"color": "#dce8f5"}},
+                title={"text": "Sensitivity", "font": {"color": "#203a40"}},
                 tickmode="array",
                 tickvals=[1, 2, 3],
                 ticktext=["Lower", "Moderate", "Higher"],
-                tickfont=dict(color="#dce8f5"),
+                tickfont=dict(color="#203a40"),
             ),
             hovertemplate=(
                 "Country: %{y}<br>Event: %{x}<br>Initial screen: %{text}<extra></extra>"
@@ -215,17 +215,17 @@ def render_exposure_matrix(exposure: pd.DataFrame) -> None:
         height=365,
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#dce8f5"),
+        font=dict(color="#203a40"),
         margin=dict(l=10, r=15, t=12, b=85),
         xaxis=dict(
             side="bottom",
             tickangle=-12,
-            tickfont=dict(color="#c1d0e0", size=11),
+            tickfont=dict(color="#445e63", size=11),
             showgrid=False,
         ),
         yaxis=dict(
             autorange="reversed",
-            tickfont=dict(color="#c1d0e0", size=12),
+            tickfont=dict(color="#445e63", size=12),
             showgrid=False,
         ),
     )
