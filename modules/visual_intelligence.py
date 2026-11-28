@@ -61,9 +61,9 @@ def render_scenario_comparison(inputs, fx, currency, event, period):
 
 
 def render_overview():
-    st.markdown('''<div class="scope-hero"><div class="scope-eyebrow">SHOCKSCOPE / Product overview · v0.7</div><div class="scope-title">From global disruption to financial decisions.</div><div class="scope-subtitle">Understand economic exposure, stress-test costs and translate international events into business-level financial intelligence.</div></div>''',unsafe_allow_html=True)
+    st.markdown('''<div class="scope-hero"><div class="scope-eyebrow">SHOCKSCOPE / Product overview · v0.8</div><div class="scope-title">From global disruption to financial decisions.</div><div class="scope-subtitle">Understand economic exposure, stress-test costs and translate international events into business-level financial intelligence.</div></div>''',unsafe_allow_html=True)
     a,b,c,d=st.columns(4)
-    a.metric('Historical cases','3'); b.metric('Economies','6'); c.metric('Industries','6'); d.metric('Analytical modules','5')
+    a.metric('Historical cases','3'); b.metric('Economies','6'); c.metric('Industries','6'); d.metric('Analytical modules','6')
     st.button('Open Global Dashboard',key='overview_launch',on_click=lambda:st.session_state.update({'scope_page':'01 · Global Dashboard'}))
     st.divider()
     a,b=st.columns(2)
@@ -74,7 +74,7 @@ def render_overview():
         st.subheader('Our solution')
         st.write('A single analytical workflow: evidence → exposure → scenarios → company profitability → explainable reports. Historical facts, analyst assessments and hypothetical calculations are explicitly separated.')
     st.subheader('Explore the platform')
-    for name,body in [('01 · Global Dashboard','Historical event indicators and geographic exposure.'),('02 · Event Explorer','Background, timeline and economic transmission.'),('03 · Country & Industry Impact','Compare six economies and six industries.'),('04 · Shock Simulator','Stress-test import costs, compare scenarios and isolate sensitivities.'),('05 · Company Calculator & Reports','Estimate EBITDA and export rule-based impact reports.')]:
+    for name,body in [('01 · Global Dashboard','Historical event indicators and geographic exposure.'),('02 · Event Explorer','Background, timeline and economic transmission.'),('03 · Country & Industry Impact','Compare six economies and six industries.'),('04 · Shock Simulator','Stress-test import costs, compare scenarios and isolate sensitivities.'),('05 · Company Calculator & Reports','Estimate EBITDA and export rule-based impact reports.'),('06 · Evidence & Market Reaction','Trace a case to its source and compare asset and benchmark returns.')]:
         a,b=st.columns([2,3]); a.button(name,key='overview_'+name[:2],on_click=lambda page=name:st.session_state.update({'scope_page':page})); b.write(body)
     st.divider()
     st.subheader('Who could use SHOCKSCOPE?')
