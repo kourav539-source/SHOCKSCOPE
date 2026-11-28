@@ -21,99 +21,48 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-        .stApp {
-            background: radial-gradient(circle at 12% 0%, #132943 0%, #0b1422 42%, #08101b 100%);
-            color: #e9f1fb;
-        }
-        [data-testid="stSidebar"] {
-            background: #0c1726;
-            border-right: 1px solid #21334a;
-        }
-        [data-testid="stHeader"] {
-            background: rgba(8, 16, 27, 0.82);
-        }
-        h1, h2, h3, h4 {
-            color: #f1f6ff !important;
-        }
-        p, label, .stMarkdown, [data-testid="stCaptionContainer"] {
-            color: #c3d0e0;
-        }
-        [data-testid="stCaptionContainer"] p { color: #a8bbd0 !important; }
-        [data-testid="stMetric"] {
-            background: linear-gradient(145deg, #142943, #102137);
-            border: 1px solid #29415d;
-            border-radius: 14px;
-            padding: 15px 17px;
-        }
-        [data-testid="stMetricLabel"] p {
-            color: #a9bdd3 !important;
-            font-size: 0.88rem !important;
-        }
-        [data-testid="stMetricValue"] {
-            color: #f4f8ff !important;
-        }
-        [data-testid="stMetricDelta"] {
-            color: #9eb4cd !important;
-        }
-        div[data-testid="stPlotlyChart"] {
-            background: rgba(17, 34, 54, 0.68);
-            border: 1px solid #263d57;
-            border-radius: 14px;
-            padding: 8px;
-        }
-        div[data-testid="stDataFrame"] {
-            border: 1px solid #263d57;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-        .scope-hero {
-            background: linear-gradient(110deg, rgba(26, 56, 84, 0.96), rgba(15, 32, 51, 0.92));
-            border: 1px solid #34516f;
-            border-radius: 18px;
-            padding: 26px 28px;
-            margin: 4px 0 22px 0;
-        }
-        .scope-eyebrow {
-            color: #79d6ca;
-            font-size: 0.76rem;
-            letter-spacing: 0.16em;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 9px;
-        }
-        .scope-title {
-            color: #f5f8ff;
-            font-size: 2.1rem;
-            font-weight: 750;
-            line-height: 1.15;
-            margin: 0 0 9px 0;
-        }
-        .scope-subtitle {
-            color: #bac9da;
-            font-size: 1rem;
-            line-height: 1.55;
-            max-width: 900px;
-            margin: 0;
-        }
-        .section-kicker {
-            color: #79d6ca;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            font-size: 0.72rem;
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-        .small-note {
-            color: #98adc4;
-            font-size: 0.82rem;
-        }
-        a {
-            color: #79d6ca !important;
-        }
-        hr {
-            border-color: #243a52 !important;
-        }
-    </style>
+.stApp {background: #f8faf9; color: #17323a;}
+[data-testid="stHeader"] {background: rgba(248,250,249,.94);}
+[data-testid="stSidebar"] {background: #fff; border-right: 1px solid #d5e2df;}
+.scope-hero {
+    padding: clamp(20px,4vw,42px); margin: 4px 0 22px;
+    background: linear-gradient(110deg,#e1f2ed,#f5faf8 82%);
+    border: 1px solid #c4ded5; border-left: 5px solid #087668; border-radius: 16px;
+}
+.scope-title {color: #102f36; font-size: clamp(1.65rem,4vw,2.65rem); font-weight: 750; line-height: 1.14; letter-spacing: -.035em; margin-bottom: 10px;}
+.scope-subtitle {max-width: 75ch; color: #3e595f; line-height: 1.58;}
+.scope-eyebrow,.section-kicker {color: #075e52; font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px;}
+.small-note,[data-testid="stCaptionContainer"] {color: #52676c;}
+[data-testid="stMetric"],[data-testid="stPlotlyChart"],[data-testid="stDataFrame"] {
+    background: #fff; border: 1px solid #d2dfdc; border-radius: 12px;
+}
+[data-testid="stMetric"] {padding: 14px 16px; box-shadow: 0 2px 6px rgba(22,64,52,.04);}
+[data-testid="stMetricValue"] {color: #123d38; font-variant-numeric: tabular-nums;}
+[data-testid="stPlotlyChart"] {padding: 4px;}
+[data-testid="stSidebar"] [role="radiogroup"] label {
+    padding: .42rem .55rem; border-radius: 8px; margin: .08rem 0; cursor: pointer;
+}
+[data-testid="stSidebar"] [role="radiogroup"] label:has(input:checked) {
+    background: #dff1eb; color: #064c43; box-shadow: inset 3px 0 #087668;
+}
+.stApp [role="tab"][aria-selected="true"] {color: #065b50; font-weight: 650;}
+.stApp :is(button,a,summary,[role="tab"],input):focus-visible,
+[data-testid="stSidebar"] label:has(input:focus-visible) {
+    outline: 3px solid #176ab1; outline-offset: 2px;
+}
+.stApp .stButton button,.stApp .stDownloadButton button {border-radius: 9px;}
+@media (hover:hover) {
+    [data-testid="stSidebar"] [role="radiogroup"] label:hover,
+    .stApp [role="tab"]:hover,.stApp [data-testid="stExpander"] summary:hover {background: #eaf4f0;}
+    .stApp .stButton button:hover,.stApp .stDownloadButton button:hover {
+        border-color: #087668; box-shadow: 0 3px 10px rgba(9,82,66,.12);
+    }
+}
+@media (prefers-reduced-motion:no-preference) {
+    .stApp .stButton button,.stApp .stDownloadButton button,
+    [data-testid="stSidebar"] [role="radiogroup"] label {transition: background-color .16s ease, border-color .16s ease, box-shadow .16s ease;}
+}
+</style>
     """,
     unsafe_allow_html=True,
 )
@@ -122,10 +71,10 @@ with st.sidebar:
     st.markdown(
         """
         <div style="padding: 8px 0 14px 0;">
-            <div style="font-size: 1.55rem; font-weight: 800; letter-spacing: 0.04em; color: #f4f8ff;">
-                SHOCK<span style="color:#79d6ca;">SCOPE</span>
+            <div style="font-size: 1.55rem; font-weight: 800; letter-spacing: 0.04em; color: #17323a;">
+                SHOCK<span style="color:#08675f;">SCOPE</span>
             </div>
-            <div style="color:#8fa8c3; font-size:0.72rem; letter-spacing:0.13em;">
+            <div style="color:#50676c; font-size:0.72rem; letter-spacing:0.13em;">
                 EVENT-TO-ECONOMY INTELLIGENCE
             </div>
         </div>
