@@ -83,7 +83,7 @@ with st.sidebar:
     )
     st.markdown("---")
     st.markdown("**WORKSPACE**")
-    page = st.radio("Navigate", ["00 · Product Overview", "01 · Global Dashboard", "02 · Event Explorer", "03 · Country & Industry Impact", "04 · Shock Simulator", "05 · Company Calculator & Reports", "06 · Evidence & Market Reaction"], label_visibility="collapsed", key="scope_page")
+    page = st.radio("Navigate", ["00 · Product Overview", "01 · Global Dashboard", "02 · Event Explorer", "03 · Country & Industry Impact", "04 · Shock Simulator", "05 · Company Calculator & Reports", "06 · Evidence & Market Reaction", "07 · Live News TV"], label_visibility="collapsed", key="scope_page")
     st.markdown("---")
     st.markdown("**ACTIVE ANALYSIS CASE**")
     shared_select("International event", "event", "scope_sidebar_event")
@@ -94,6 +94,29 @@ with st.sidebar:
     st.markdown("---")
     st.caption("BUILD 0.8 · LOCAL DATA MODE")
     st.caption("Historical reference data only. No live market feed is connected.")
+
+def render_live_news():
+    from streamlit.components.v1 import iframe
+
+    channels = {
+        'CNBC-TV18': ('UCmRbHAgG2k2vDUvb3xsEunQ', 'https://www.youtube.com/@CNBC-TV18/streams'),
+        'NDTV Profit': ('UC3uJIdRFTGgLWrUziaHbzrg', 'https://www.ndtvprofit.com/live-tv/'),
+        'ET Now': ('UCI_mwTKUhicNzFrhm33MzBQ', 'https://www.etnownews.com/live-tv'),
+        'Bloomberg Television': ('UCIALMKvObZNtJ6AmdCLP7Lg', 'https://www.youtube.com/@markets/streams'),
+        'CBC News': ('UCuFFtHWoLl5fauMMD5Ww2jA', 'https://www.youtube.com/@CBCNews/streams'),
+    }
+    st.title('Live News TV')
+    with st.expander('Manage channels'):
+        visible = st.multiselect('Channels to show', list(channels), default=list(channels))
+    if not visible:
+        st.info('Select a channel under Manage channels to start watching.')
+        return
+    selected = st.radio('Watch a channel', visible, horizontal=True)
+    channel_id, official_page = channels[selected]
+    iframe(f'https://www.youtube.com/embed/live_stream?channel={channel_id}', height=420)
+    st.link_button(f'Watch on {selected}', official_page)
+    st.caption('The player shows the broadcaster’s current YouTube stream when available. If playback is unavailable, use the broadcaster link above.')
+
 
 if page.startswith("00"):
     render_overview()
@@ -107,5 +130,7 @@ elif page.startswith("04"):
     render_shock_simulator()
 elif page.startswith("05"):
     render_company_calculator()
-else:
+elif page.startswith("06"):
     render_evidence_desk()
+else:
+    render_live_news()
